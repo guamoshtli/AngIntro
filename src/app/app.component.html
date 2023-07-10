@@ -5,7 +5,14 @@
 
 <h4>{{message}}</h4>
 <h4>{{ fromChildOutput }}</h4>
+
+<!--String Interpolation -->
 <p>
   {{ messageStr}}
 </p>
+<!-- Property Binding-->
+<img src="{{ imgUrl }} " alt="">
+<br>
+
+<img [src]="imgUrl" alt="">
 
