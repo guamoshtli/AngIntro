@@ -13,6 +13,7 @@ export class AppComponent implements AfterViewInit {
   message: string = '';
   fromChildOutput: string = '';
   messageStr: string = 'Messag from TypeScript Component File';
+  imgUrl: string = 'https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png';
 
   //@ViewChild(PostComponent)  childComp?: any;
   @ViewChild(PostComponent) childComponent!: PostComponent;
