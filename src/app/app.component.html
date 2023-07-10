@@ -1,6 +1,7 @@
 <h1>Angular App</h1>
 
 <app-navbar-v2></app-navbar-v2>
-<app-post [fromParent]='parentMessage'></app-post>
+<app-post [fromParent]='parentMessage' (messageEvent)='reciveMessage($event)'></app-post>
 
 <h4>{{message}}</h4>
+<h4>{{ fromChildOutput }}</h4>
