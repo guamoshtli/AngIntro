@@ -12,6 +12,7 @@ export class AppComponent implements AfterViewInit {
   parentMessage: string ='Message coming from parent component, changed';
   message: string = '';
   fromChildOutput: string = '';
+  messageStr: string = 'Messag from TypeScript Component File';
 
   //@ViewChild(PostComponent)  childComp?: any;
   @ViewChild(PostComponent) childComponent!: PostComponent;
