@@ -33,9 +33,11 @@ onDelete(post?: any){
 
   let index = this.objArray.indexOf(post);
   this.objArray.splice(index,1);
+}
 
+onDelete2(index: number){
 
-
+    this.objArray.splice(index,1);
 }
 
 }
