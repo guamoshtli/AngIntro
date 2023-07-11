@@ -13,7 +13,17 @@
 <p>Feching Objet Array</p>
 
 <button (click)="addNew();">Add new data</button>
-<u>
+
+<div *ngIf='objArray.length>0; then withData else noData '></div>
+
+<!--
+<div *ngIf="objArray.length==0">
+  <p>There is no data to fetch  ...</p>
+</div>
+-->
+
+<ng-template #withData>
+  <u>
   <li *ngFor="let post of objArray">{{post | json}}</li>
 </u>
 <br>
@@ -35,3 +45,9 @@
 
   </li>
 </u>
+</ng-template>
+
+
+<ng-template #noData>
+  <p>There is no data to fetch  ...</p>
+</ng-template>
