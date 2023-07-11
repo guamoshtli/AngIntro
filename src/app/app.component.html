@@ -1,55 +1,68 @@
 <h1>Angular App</h1>
-
+<!--
 <app-navbar-v2></app-navbar-v2>
 <app-post [fromParent]='parentMessage' (messageEvent)='reciveMessage($event)'></app-post>
 
 <h4>{{message}}</h4>
 <h4>{{ fromChildOutput }}</h4>
+-->
 
-<!--String Interpolation -->
+<!--String Interpolation
 <p>
   {{ messageStr}}
 </p>
-<!-- Property Binding-->
+-->
+<!-- Property Binding
 <img src="{{ imgUrl }} " alt="">
 <br>
 
+
 <img [src]="imgUrl" alt="">
-<!--Style Binding-->
+-->
+<!--Style Binding
 <h1 [class.text-red] = "bool">Red color only if  bool var is true</h1>
 <h1 [class.text-red] = "!bool">Red color only if  bool var is true</h1>
 <h1 [style.color]=" bool? 'red' : 'blue' "> Style Binding</h1>
 <h1 [style.color]=" !bool? 'red' : 'blue' "> Style Binding</h1>
-<!--Event Binding-->
+
+-->
+<!--Event Binding
 <button (click)="buttonClick()">Click me!</button>
 
-<!--Event Filtering-->
+-->
+
+<!--Event Filtering
 <input type="text" (keyup)="onKeyUp()">
 <br>
 <input type="text" (keyup)="onKeyUp2($event)">
 <br>
 <input type="text" (keyup.enter)="onKeyUp3()">
-
 <h4>{{message}}</h4>
+-->
 
-<!--Template Variables-->
+<!--Template Variables
 <input type="text" (keyup.enter)="onKeyUp4(username.value)" #username>
 <br>
-<!--Two Way Data Biding-->
+-->
+<!--Two Way Data Biding
 <input type="text" [(ngModel)] = "userName" (keyup)="onKeyUp5()">
 <h1>{{message}}</h1>
 <br>
+-->
 <!--One Way And Two Way Data Biding-->
-  <!--One Way-->
+  <!--One Way
 <input type="text" value="One way data biding">
 <br>
 <input type="text" [value]="messageStr">
 <br>
 <input type="text" [value]="messageStr" (keyup)="onKeyUp6()" >
-  <!--Two Way-->
+-->
+  <!--Two Way
 <br>
 <input type="text" [(ngModel)]="messageStr" (keyup)="onKeyUp7()" >
 <h4>{{message}}</h4>
+-->
+<app-task></app-task>
 
 
 

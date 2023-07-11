@@ -1,0 +1,17 @@
+<p>task works!</p>
+<input type="text" [(ngModel)]="messageStr" (keyup)="onKeyUp()" >
+<h4 [style.color]=" !bool? 'red' : 'blue' ">{{message}}</h4>
+<textarea  [(ngModel)]="messageArea" ></textarea>
+<h4>{{messageArea}}</h4>
+<br>
+<input type="text" [(ngModel)]="urlStr"  >
+<img [src]="urlStr" alt="" width="{{iwidht}}" height="{{iheight}}">
+<br>
+<input type="checkbox" id="color" name="color" value="Color" (click)="onClick()">
+  <label for="color"> Change color and size</label>
+<br>
+<input type="text" [(ngModel)] ="postUrl">
+<br>
+<a [href]="postUrl" target="_blank" [style.display]="postUrl? 'block': 'none' ">More Details ...</a>
+
+

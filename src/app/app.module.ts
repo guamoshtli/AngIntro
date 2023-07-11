@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarV2Component } from './navbar-v2/navbar-v2.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PostListComponent } from './post-list/post-list.component';
     NavbarComponent,
     NavbarV2Component,
     PostComponent,
-    PostListComponent
+    PostListComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
