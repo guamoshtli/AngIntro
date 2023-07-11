@@ -25,4 +25,17 @@ export class DirectivesComponent {
   }
 }
 
+addNew(){
+  this.objArray.push({id:6, postTitle:'Post 6'})
+}
+
+onDelete(post?: any){
+
+  let index = this.objArray.indexOf(post);
+  this.objArray.splice(index,1);
+
+
+
+}
+
 }
