@@ -38,6 +38,20 @@
 <!--Two Way Data Biding-->
 <input type="text" [(ngModel)] = "userName" (keyup)="onKeyUp5()">
 <h1>{{message}}</h1>
+<br>
+<!--One Way And Two Way Data Biding-->
+  <!--One Way-->
+<input type="text" value="One way data biding">
+<br>
+<input type="text" [value]="messageStr">
+<br>
+<input type="text" [value]="messageStr" (keyup)="onKeyUp6()" >
+  <!--Two Way-->
+<br>
+<input type="text" [(ngModel)]="messageStr" (keyup)="onKeyUp7()" >
+<h4>{{message}}</h4>
+
+
 
 
 

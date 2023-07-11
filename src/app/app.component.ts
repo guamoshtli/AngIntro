@@ -76,5 +76,20 @@ export class AppComponent implements AfterViewInit {
 
     }
 
+    onKeyUp6() {
+
+
+     console.log(this.messageStr)
+
+    }
+
+    onKeyUp7() {
+
+
+     this.message='Hello ' + this.messageStr;
+
+    }
+
+
 
 }
