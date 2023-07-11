@@ -16,6 +16,8 @@ export class DirectivesComponent {
     {id:5, postTitle:'Post 5'}
   ]
 
+  stepForm: string = '';
+
   constructor() {
 
   for(let i=0; i<this.postArray.length; i++) {
@@ -38,6 +40,11 @@ onDelete(post?: any){
 onDelete2(index: number){
 
     this.objArray.splice(index,1);
+}
+
+onClick(status: string) {
+
+this.stepForm=status;
 }
 
 }
