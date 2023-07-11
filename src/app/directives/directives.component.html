@@ -9,3 +9,14 @@
 <ul>
   <li *ngFor="let post of postArray">{{post}}</li>
 </ul>
+<br>
+<p>Feching Objet Array</p>
+
+<u>
+  <li *ngFor="let post of objArray">{{post | json}}</li>
+</u>
+<br>
+
+<u>
+  <li *ngFor="let post of objArray">{{post.postTitle}}</li>
+</u>
