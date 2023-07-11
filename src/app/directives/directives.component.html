@@ -19,9 +19,19 @@
 <br>
 
 <u>
-  <li *ngFor="let post of objArray">
+  <li *ngFor="let post of objArray; ">
     {{post.postTitle}}
     <button (click)="onDelete(post);">Delete</button>
+
+  </li>
+</u>
+
+<br>
+
+<u>
+  <li *ngFor="let post of objArray; let i = index">
+    {{ i }} {{post.postTitle}}
+    <button (click)="onDelete2(i);">Delete</button>
 
   </li>
 </u>
