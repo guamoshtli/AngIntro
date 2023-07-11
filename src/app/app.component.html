@@ -15,9 +15,29 @@
 <br>
 
 <img [src]="imgUrl" alt="">
-
+<!--Style Binding-->
 <h1 [class.text-red] = "bool">Red color only if  bool var is true</h1>
 <h1 [class.text-red] = "!bool">Red color only if  bool var is true</h1>
 <h1 [style.color]=" bool? 'red' : 'blue' "> Style Binding</h1>
 <h1 [style.color]=" !bool? 'red' : 'blue' "> Style Binding</h1>
+<!--Event Binding-->
+<button (click)="buttonClick()">Click me!</button>
+
+<!--Event Filtering-->
+<input type="text" (keyup)="onKeyUp()">
+<br>
+<input type="text" (keyup)="onKeyUp2($event)">
+<br>
+<input type="text" (keyup.enter)="onKeyUp3()">
+
+<h4>{{message}}</h4>
+
+<!--Template Variables-->
+<input type="text" (keyup.enter)="onKeyUp4(username.value)" #username>
+<br>
+<!--Two Way Data Biding-->
+<input type="text" [(ngModel)] = "userName" (keyup)="onKeyUp5()">
+<h1>{{message}}</h1>
+
+
 
