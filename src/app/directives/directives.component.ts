@@ -17,6 +17,7 @@ export class DirectivesComponent {
   ]
 
   stepForm: string = '';
+  isActive: boolean = true;
 
   constructor() {
 

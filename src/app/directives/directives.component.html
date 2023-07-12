@@ -1,3 +1,25 @@
+<h1> Directives</h1>
+<h2 [style.color]="isActive?  'red' :  'blue' "
+    [style.text-transform]="isActive? 'uppercase' :  'lowercase' "
+>
+   Directive Style
+</h2>
+
+<h3
+[style]="{
+  color: isActive? 'yellow' : 'white',
+  textTransform: isActive? 'uppercase' : 'lowercase'
+}"
+>NgDirective Style
+</h3>
+
+<h1
+[ngClass]="{
+  'main': isActive,
+  'text-wight' : isActive
+}"
+> NgDirective Style</h1>
+
 <p>directives works!</p>
 <p>{{postArray}}</p>
 <ul>
@@ -71,5 +93,7 @@
   <div *ngSwitchCase="'Step 3'">Step 3 Form</div>
   <div *ngSwitchDefault> Press a button</div>
 </div>
+
+
 
 
