@@ -10,6 +10,7 @@ import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { TaskComponent } from './task/task.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { TaskDirectivesComponent } from './task-directives/task-directives.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DirectivesComponent } from './directives/directives.component';
     PostComponent,
     PostListComponent,
     TaskComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    TaskDirectivesComponent
   ],
   imports: [
     BrowserModule,
