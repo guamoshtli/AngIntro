@@ -1,0 +1,21 @@
+<h1>{{ title | lowercase }}</h1>
+<h2>{{ count | number }}</h2>
+<h2>{{ count | currency }}</h2>
+<h3>{{ decValue | number: '1.2-2'}}</h3>
+<h3>{{ decValue | number: '10.2-2'}}</h3>
+<h3>{{ decValue | number: '1.1-1'}}</h3>
+<h3>{{ decValue | number: '1.2-1'}}</h3>
+<h3>{{ decValue | number: '2.0-1'}}</h3>
+<h3>{{ decValue | number: '2.0-0'}}</h3>
+<h2>{{ count | currency: 'MXN' }}</h2>
+<h2>{{ count | currency :'EUR'}}</h2>
+<h2>{{ count | currency :'JPY'}}</h2>
+<h2>{{ currVal | currency : 'USD' }}</h2>
+<h2>{{ currVal | currency : 'USD': false }}</h2>
+<h2>{{ currVal | currency : 'USD': false : '2.1-1' }}</h2>
+<h2>{{ currVal | currency : 'USD': false : '2.0-0' }}</h2>
+<h3>{{ today }}</h3>
+<h3>{{ today | date }}</h3>
+<h3>{{ today | date : 'short' }}</h3>
+<h3>{{ today | date : 'shortDate' }}</h3>
+<h3>{{ today | date }}</h3>

@@ -1,9 +1,28 @@
 h4{
   color: rgb(2, 71, 2);
   font-size: 25px;
+  position: absolute;
+  left: 30%;
 }
 
 .text-red{
   color: red;
 
 }
+
+.main-div{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.table-area{
+  position: absolute;
+  left: 30%;
+  width: 500;
+
+}
+
+
+

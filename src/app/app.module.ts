@@ -11,6 +11,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { TaskComponent } from './task/task.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { TaskDirectivesComponent } from './task-directives/task-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TaskDirectivesComponent } from './task-directives/task-directives.compo
     PostListComponent,
     TaskComponent,
     DirectivesComponent,
-    TaskDirectivesComponent
+    TaskDirectivesComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
