@@ -15,6 +15,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { AppendPipe } from './pipes/append.pipe';
 import { AppendCliPipe } from './MyPipes/append-cli.pipe';
 import { SummaryPipe } from './MyPipes/summary.pipe';
+import { PostService } from './Services/post.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { SummaryPipe } from './MyPipes/summary.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
