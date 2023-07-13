@@ -12,5 +12,19 @@ export class PipesComponent {
   decValue:  number = 3.1415927;
   currVal: number = 99.589;
   today: Date = new Date();
+  postObj: object = {
+    id: 1,
+    postTitle: "Post Title 1"
+  }
+
+  postArray: Array<string> = [
+    "post 1",
+    "post 2",
+    "post 3",
+    "post 4",
+    "post 5",
+    "post 6"
+  ]
+
 
 }

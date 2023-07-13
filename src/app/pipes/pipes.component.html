@@ -1,3 +1,4 @@
+<!--
 <h1>{{ title | lowercase }}</h1>
 <h2>{{ count | number }}</h2>
 <h2>{{ count | currency }}</h2>
@@ -19,3 +20,13 @@
 <h3>{{ today | date : 'short' }}</h3>
 <h3>{{ today | date : 'shortDate' }}</h3>
 <h3>{{ today | date }}</h3>
+-->
+
+<h1>{{ postObj }}</h1>
+<h1>{{ postObj | json }}</h1>
+<h2>{{ .726 | percent }}</h2>
+<h2>{{ .726 | percent:  '1.1-1' }}</h2>
+<h3>{{ postArray  }}</h3>
+<h3>{{ postArray | slice: 0:0  }}</h3>
+<h3>{{ postArray | slice: 0:1  }}</h3>
+<h3>{{ postArray | slice: 3:5  }}</h3>
