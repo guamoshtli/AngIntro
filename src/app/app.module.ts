@@ -12,6 +12,9 @@ import { TaskComponent } from './task/task.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { TaskDirectivesComponent } from './task-directives/task-directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { AppendPipe } from './pipes/append.pipe';
+import { AppendCliPipe } from './MyPipes/append-cli.pipe';
+import { SummaryPipe } from './MyPipes/summary.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { PipesComponent } from './pipes/pipes.component';
     TaskComponent,
     DirectivesComponent,
     TaskDirectivesComponent,
-    PipesComponent
+    PipesComponent,
+    AppendPipe,
+    AppendCliPipe,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

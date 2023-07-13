@@ -20,7 +20,7 @@
 <h3>{{ today | date : 'short' }}</h3>
 <h3>{{ today | date : 'shortDate' }}</h3>
 <h3>{{ today | date }}</h3>
--->
+
 
 <h1>{{ postObj }}</h1>
 <h1>{{ postObj | json }}</h1>
@@ -30,3 +30,15 @@
 <h3>{{ postArray | slice: 0:0  }}</h3>
 <h3>{{ postArray | slice: 0:1  }}</h3>
 <h3>{{ postArray | slice: 3:5  }}</h3>
+
+
+
+<h1>{{ userDetails.city }}</h1>
+<h1>City Name: {{ userDetails.city }}</h1>
+<h1>{{ userDetails.city | append }}</h1>
+<h1>{{ userDetails.name | appendCli }}</h1>
+
+-->
+
+<p> {{  dummyText }}</p>
+<p> {{  dummyText | summary: 21:49  }}</p>
