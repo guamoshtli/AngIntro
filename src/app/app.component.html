@@ -78,7 +78,16 @@
   <form #f = 'ngForm' (submit)="onSubmit(f)">
     <div class="form-group">
       <label for="">First Name</label>
-      <input type="text" placeholder="First Name" class="form-control" name="fullName" ngModel>
+      <input type="text"
+        placeholder="Full Name"
+        class="form-control"
+        name="fullName"
+        ngModel
+        #fullName ="ngModel"
+
+        required
+        >
+        <div class="alert alert-danger" *ngIf="fullName.touched && fullName.invalid"> Full Name is required</div>
     </div>
     <div class="form-group">
       <label for="">Email</label>
