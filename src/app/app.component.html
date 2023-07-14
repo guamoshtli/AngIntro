@@ -70,9 +70,27 @@
 <app-task-directives></app-task-directives>
 
 <app-pipes></app-pipes>
--->
+
 <app-post></app-post>
 <app-post-list></app-post-list>
+-->
+<div class="container mt-5">
+  <form #f = 'ngForm' (submit)="onSubmit(f)">
+    <div class="form-group">
+      <label for="">First Name</label>
+      <input type="text" placeholder="First Name" class="form-control" name="fullName" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="email" placeholder="Email" class="form-control" name="email" ngModel>
+    </div>
+    <div class="form-group">
+      <label for=""><Address></Address></label>
+      <textarea name="Address" id="Address" cols="30" rows="10" placeholder="Address" class="form-control" ngModel></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 
 
 

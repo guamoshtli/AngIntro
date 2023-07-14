@@ -1,6 +1,7 @@
 import { Component , ViewChild, AfterViewInit} from '@angular/core';
 import { PostComponent } from './post/post.component';
 //import { ConsoleReporter } from 'jasmine';
+import { NgForm } from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -87,6 +88,10 @@ export class AppComponent implements AfterViewInit {
 
 
      this.message='Hello ' + this.messageStr;
+
+    }
+
+    onSubmit(f: NgForm) {
 
     }
 
