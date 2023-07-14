@@ -6,6 +6,7 @@
 -->
 
 <h1>Post List Component</h1>
+<button (click)="addNewPost()">Add New Post</button>
 <ul>
   <li *ngFor="let post of postList">
     {{post.postTitle}}

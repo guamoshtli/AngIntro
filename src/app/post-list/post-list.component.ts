@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PostService } from '../Services/post.service';
+import { Post } from '../models/post';
 
 @Component({
   selector: 'app-post-list',
@@ -24,5 +25,16 @@ this.postList = postService.postList;
     ngOnInit(): void {
 
     }
+
+ addNewPost() {
+  let newPost: Post = {
+    id: 7,
+    postTitle: 'Post 7'
+  }
+
+  this.postService.addPost(newPost);
+
+
+ }
 
 }

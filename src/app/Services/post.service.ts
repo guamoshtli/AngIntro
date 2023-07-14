@@ -15,4 +15,11 @@ export class PostService {
       {id:6, postTitle: 'Post 6'},
 
   ]
+
+  addPost(data?: any) {
+
+    this.postList.push(data);
+    console.log(this.postList)
+
+  }
 }
